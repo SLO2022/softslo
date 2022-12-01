@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <style>
     body,
     h1,
@@ -29,7 +33,7 @@
     .bgimg-1 {
       background-position: center;
       background-size: cover;
-      background-image: url("../images/bckgr.jpg");
+      background-image: url("images/bckgrimg.jpg");
       min-height: 100%;
     }
 
@@ -38,13 +42,13 @@
 
     }
 
-    .container1{
+    .container1 {
       background-color: #F9F7F7;
     }
-    .container2{
-      background-color: #DBE2EF;
-    }
 
+    .container2 {
+      background-color: #AAAAAA;
+    }
   </style>
 </head>
 
@@ -57,9 +61,9 @@
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
         <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-        <a href="..\html\about.html" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
         <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-code"></i> WORK</a>
-        <a href="..\html\services.html" class="w3-bar-item w3-button"><i class="fa fa-handshake-o"></i> SERVICES</a>
+        <a href="services.html" class="w3-bar-item w3-button"><i class="fa fa-handshake-o"></i> SERVICES</a>
         <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -72,9 +76,9 @@
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="..\html\about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
     <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-    <a href="..\html\services.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
+    <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
   </nav>
 
@@ -95,9 +99,10 @@
   </header>
 
   <!-- Our SERVICES -->
-  <div class="w3-container container1" style="padding:128px 16px" id="about">
+  <div class="w3-container container1" style="padding:40px 16px 128px 16px" id="about">
     <h2 class="w3-center">OUR SERVICES</h2>
-    <p class="w3-center w3-large">At softslo, we know that your business is more than just a website. It's an extension of who you are and what you do, and it has to reflect the quality of your product or service in order to be successful.
+    <p class="w3-center w3-large" style="padding: 15px 0px 50px 0px;">At softslo, we know that your business is more than just a website. It's an extension of who you are and what you do,
+      and it has to reflect the quality of your product or service in order to be successful.
       <br> That's why we focus on creating beautiful, functional websites that are designed to engage your customers and propel your business forward.
     </p>
     <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -123,11 +128,9 @@
       </div>
     </div>
     <div class="w3-center" style="padding: 70px 0px 0px 0px">
-      <a href="C:\Users\sebas\Atom projects\Web Development\slotech\html\services.html" class="w3-button w3-theme w3-black">See more</a>
+      <a href="services.html" class="w3-button w3-theme w3-black">See more</a>
     </div>
   </div>
-
-
 
   <!-- Promo Section - "We know design" -->
   <div class="w3-container container2" style="padding:128px 16px">
@@ -138,16 +141,18 @@
           We believe in the power of design to help you stand out in a crowded marketplace and make an impact with your audience.</p>
         <p>Our team of designers and developers are experts at designing websites that are easy to navigate and look great on any device, from desktop computers to smartphones.
           Our software development team builds custom apps for businesses just like yours that help you streamline tasks, automate processes, and engage with clients in new ways.</p>
-        <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
       </div>
       <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="../Images/web_design.jpeg" alt="Buildings" width="700" height="394">
+        <img class="w3-image w3-round-large" src="images/weknowdesign.png" alt="Buildings" width="700" height="394">
       </div>
     </div>
   </div>
 
   <!-- Work Section -->
-  <div class="w3-container container1" style="padding:128px 16px" id="work">
+<div class="container1" id="work">
+<br>
+</div>
+  <div class="w3-container container1" style="padding:15px 16px 0px 16px;">
     <h2 class="w3-center">WHY WORK WITH US</h2>
     <p class="w3-center w3-large">Key features of our company</p>
     <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -157,7 +162,8 @@
         <p>We're available to help you by email, telephone, or in person.
           We're happy to help you with any aspect of your business.
           <br>
-          If you need to reach us after hours, please email us at [email].</p>
+          If you need to reach us after hours, please email us at [email].
+        </p>
       </div>
       <div class="w3-quarter">
         <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
@@ -200,6 +206,8 @@
 </div>
 -->
 
+<!--
+
   <div class="w3-container container2" style="padding:128px 16px">
     <h3 class="w3-center">OUR WORK</h3>
     <p class="w3-center w3-large">What we've done for people</p>
@@ -234,7 +242,7 @@
       </div>
     </div>
   </div>
-
+-->
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
     <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
@@ -251,18 +259,18 @@
         <h3>Our Skills.</h3>
         <p>Designing and developing websites and web applications is what we do. We are a team of professionals who work with the latest technologies to create innovative,
           easy to use websites and web applications.</p>
-          <br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
         <p>Our team is capable of designing or building any type of website: from simple brochure site to complicated e-commerce system.
           We have worked with many different business models (SaaS, B2B, B2C) and created custom solutions for each of them.<br></p>
       </div>
       <div class="w3-col m6">
-            <img class="w3-image w3-round-large" src="../Images/pie_chart.jpg" alt="Pie" width="700" height="394">
+        <img class="w3-image w3-round-large" src="images/pie_chart.jpg" alt="Pie" width="800" height="394" style="padding: 0px 0px 0px 200px;">
       </div>
     </div>
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-container container2" style="padding:128px 16px" id="contact">
+  <div class="w3-container container2" style="padding:113px 16px" id="contact">
     <h3 class="w3-center">CONTACT</h3>
     <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
     <div style="padding: 30px 0px 0px 0px">
@@ -283,7 +291,7 @@
       <a class="fa fa-twitter w3-hover-opacity" href="https://www.linkedin.com/in/lolea-sebastian-a52919193/" style="text-decoration: none;"></a>
       <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/lolea-sebastian-a52919193/" style="text-decoration: none;"></a>
     </div>
-<p class="w3-center" style="padding: 30px 0 0 0">© All Rights Reserved.</p>
+    <p class="w3-center" style="padding: 30px 0 0 0">© All Rights Reserved.</p>
   </footer>
 
   <script>
@@ -294,7 +302,6 @@
       var captionText = document.getElementById("caption");
       captionText.innerHTML = element.alt;
     }
-
 
     // Toggle between showing and hiding the sidebar when clicking the menu icon
     var mySidebar = document.getElementById("mySidebar");
@@ -311,11 +318,7 @@
     function w3_close() {
       mySidebar.style.display = "none";
     }
-
-
-
   </script>
 
 </body>
-
 </html>
